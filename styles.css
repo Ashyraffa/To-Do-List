@@ -72,45 +72,8 @@ a {
     cursor: pointer;
 }
 
-
-/* Dropdown Menu */
-.option {
-    position: relative;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-}
-
-.dropdown {
-    background-color: #c0cad0;
-    color: #333;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.content {
-    display: none;
-    position: absolute;
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    min-width: 150px;
-}
-
-.content a {
-    display: block;
-    padding: 10px;
-    color: #000000;
-    text-decoration: none;
-}
-
-.content a:hover {
-    background-color: #f1f1f1;
-}
-
-.dropdown:hover .content {
-    display: block;
+.done {
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.7;
 }
