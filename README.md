@@ -1,6 +1,6 @@
 Hello, thanks for using my web app!
 
-Yes, the app was free indeed.
+Yes, the web app was fully free indeed.
 And it's open source.
 
 You can change the source code on the program as you want.
