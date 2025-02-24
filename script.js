@@ -1,3 +1,16 @@
+// Display About This App
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("about").addEventListener('click', function() {
+        alert("To Do List, Version 1.0.2\n Made by raffa3527");
+    });
+});
+
+
+window.onload = function() {
+    about();
+};
+
+
 
 // References from HTML
 const todoInput = document.getElementById('todo-input');
@@ -11,10 +24,16 @@ function addTask () {
 
     const li = document.createElement('li'); // Create a new list
     li.textContent = taskText; // Set the text of the task itself
+
+    // Mark as done feature:
+    li.addEventListener('click', function () {
+        li.classList.toggle('done'); // Toggle it is done
+        saveTasks(); // Save tasks after toggling
+    });
  
     // Remove button for the task:
     const removeBtn = document.createElement('button');
-    removeBtn.textContent = "X";
+    removeBtn.textContent = "Delete This Task";
     removeBtn.classList.add('remove-btn');
     removeBtn.onclick = function () {
         li.remove(); // Remove the task
@@ -52,7 +71,7 @@ function loadTasks () {
     })
 
     const removeBtn = document.createElement('button');
-    removeBtn.textContent = "X";
+    removeBtn.textContent = "Delete This Task";
     removeBtn.classList.add('remove-btn');
     removeBtn.onclick = function () {
         li.remove();
