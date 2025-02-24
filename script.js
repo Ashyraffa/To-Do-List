@@ -1,7 +1,7 @@
 // Display About This App
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("about").addEventListener('click', function() {
-        alert("To Do List, Version 1.0.2\n Made by raffa3527");
+        alert("To Do List, Version 1.0.3");
     });
 });
 
